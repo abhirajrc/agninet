@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include agninet *.css
+recursive-include agninet *.csv
+recursive-include agninet *.html
+recursive-include agninet *.ico
+recursive-include agninet *.js
+recursive-include agninet *.json
+recursive-include agninet *.md
+recursive-include agninet *.png
+recursive-include agninet *.py
+recursive-include agninet *.svg
+recursive-include agninet *.txt
+recursive-exclude agninet *.pyc
