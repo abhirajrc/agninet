@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-11 00:32:23.876242",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "a",
+  "cbr1",
+  "b",
+  "sbr_1",
+  "c",
+  "e",
+  "sbr_2",
+  "f",
+  "cbr_2",
+  "g",
+  "h",
+  "sbr_3",
+  "i",
+  "j",
+  "k",
+  "cbr_3",
+  "l"
+ ],
+ "fields": [
+  {
+   "fieldname": "cbr1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sbr_1",
+   "fieldtype": "Section Break",
+   "label": "Scope of Supply"
+  },
+  {
+   "fieldname": "sbr_2",
+   "fieldtype": "Section Break",
+   "label": "Other Charges (in percentage)"
+  },
+  {
+   "fieldname": "cbr_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sbr_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cbr_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "a",
+   "fieldtype": "Link",
+   "label": "Purchase Order Number",
+   "options": "PO Number"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Date",
+   "label": "Purchase Order Date"
+  },
+  {
+   "fieldname": "c",
+   "fieldtype": "Table",
+   "options": "Component Table"
+  },
+  {
+   "fieldname": "e",
+   "fieldtype": "Currency",
+   "label": "PO Value"
+  },
+  {
+   "fieldname": "f",
+   "fieldtype": "Percent",
+   "label": "Freight"
+  },
+  {
+   "fieldname": "g",
+   "fieldtype": "Percent",
+   "label": "P and F"
+  },
+  {
+   "fieldname": "h",
+   "fieldtype": "Percent",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "i",
+   "fieldtype": "Currency",
+   "label": "PO Payable",
+   "options": "value"
+  },
+  {
+   "fieldname": "j",
+   "fieldtype": "Currency",
+   "label": "PO Payable2"
+  },
+  {
+   "fieldname": "k",
+   "fieldtype": "Select",
+   "label": "GST",
+   "options": "\n5%\n12%\n18%\n28%"
+  },
+  {
+   "fieldname": "l",
+   "fieldtype": "Currency",
+   "label": "Amount Payable",
+   "options": "value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-11 00:37:26.016060",
+ "modified_by": "Administrator",
+ "module": "Purchase Order",
+ "name": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

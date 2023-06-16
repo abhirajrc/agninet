@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:invoice_no",
+ "creation": "2023-05-13 13:08:38.481105",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_no",
+  "invoice_date",
+  "cbr1",
+  "vendor",
+  "sbr1",
+  "invoice_amount",
+  "cbr2",
+  "invoice_upload"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No.",
+   "unique": 1
+  },
+  {
+   "fieldname": "invoice_amount",
+   "fieldtype": "Currency",
+   "label": "Invoice Amount"
+  },
+  {
+   "fieldname": "cbr1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "Vendor Details",
+   "unique": 1
+  },
+  {
+   "fieldname": "sbr1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cbr2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_upload",
+   "fieldtype": "Attach",
+   "label": "Invoice Upload"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-26 13:37:57.586216",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Invoice Amount",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

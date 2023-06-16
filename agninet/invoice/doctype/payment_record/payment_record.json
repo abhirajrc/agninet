@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-24 18:30:46.775993",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor",
+  "transaction_amount",
+  "cbr1",
+  "date",
+  "bank_name",
+  "sbr1",
+  "payment_type",
+  "section_break_wdysn",
+  "po_table",
+  "cbr2",
+  "invoice",
+  "sbr3",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "Vendor Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date of Transaction"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Table",
+   "label": "Invoice",
+   "options": "Invoice Amount Table"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "transaction_amount",
+   "fieldtype": "Currency",
+   "label": "Transaction Amount"
+  },
+  {
+   "fieldname": "cbr1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank Details"
+  },
+  {
+   "fieldname": "sbr1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cbr2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "Advance\nPurchase Invoice"
+  },
+  {
+   "fieldname": "po_table",
+   "fieldtype": "Table",
+   "label": "PO",
+   "options": "Payment Table"
+  },
+  {
+   "fieldname": "section_break_wdysn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sbr3",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-26 13:21:24.590500",
+ "modified_by": "Administrator",
+ "module": "Invoice",
+ "name": "Payment Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

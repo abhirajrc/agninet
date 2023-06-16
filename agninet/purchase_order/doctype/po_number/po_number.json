@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:AGKL_{code}/{class}/{subclass}_{DD}{MM}{YY}_{category}_{####}",
+ "creation": "2023-05-04 18:05:35.280012",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "class",
+  "subclass",
+  "category"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Project Code",
+   "options": "FE\nSE\nST\nAV\nLP\nSO\nGE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Select",
+   "label": "Class",
+   "options": "INF\nPRD\nOTH\nLOP\nLOT\nLNT\nHEC\nTAV\nCTM\nWCM\n3AT\nTMS\nTTS\nTCS\nALP\nAFR\nSQ7\nAP4\nRFD\nAFD\nFA7\nRAM\nSP2\nWS2\nRSO\nJIK\nPCR\nUTM\nEVT\nEOS\nSEP\nSER\nNII\nFPQ\nTFC\nAED\nATS\nAPS\nAVD\nGND\nFLT\nLOT\nATT\nCOS\nAG7\nAG1\nSES\nPLF\nAVI\nFTS\nOTS\nGNC\nPCQ\nHAQ\nTMT\nMEX\nREN\nDIE\nSHE\nEMI\nFOO\nTRA\nCPT\nSAL\nADV\nHOR\nMAI\nCON\nSIM\nINS"
+  },
+  {
+   "fieldname": "subclass",
+   "fieldtype": "Select",
+   "label": "subClass",
+   "options": "INF\nPRD\nOTH\nFLT\nMEX"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "PL\nELEC\nPROD\nGEN\nSTRUCT",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-15 15:39:33.623497",
+ "modified_by": "Administrator",
+ "module": "Purchase Order",
+ "name": "PO Number",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Master Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

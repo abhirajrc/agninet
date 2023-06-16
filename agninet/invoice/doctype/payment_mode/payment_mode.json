@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:mode_of_payment",
+ "creation": "2023-05-20 15:16:17.193883",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mode_of_payment"
+ ],
+ "fields": [
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Data",
+   "label": "Mode of Payment",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-20 15:16:40.920697",
+ "modified_by": "Administrator",
+ "module": "Invoice",
+ "name": "Payment Mode",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

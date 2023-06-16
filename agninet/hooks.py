@@ -22,15 +22,16 @@ app_license = "MIT"
 # website_theme_scss = "agninet/public/scss/website"
 
 # include js, css files in header of web form
-# webform_include_js = {"doctype": "public/js/doctype.js"}
+# webform_include_js = {"PO": "public/js/po_print.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+# doctype_js = {"Doctype" : "public/js/doctype.js"}
+# doctype_js = {"PO" : "public/js/over_rided_func.js"}
+doctype_list_js = {"Payment" : "public/js/payment_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -94,10 +95,9 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
-# }
-
+override_doctype_class = {
+	"Purchase Invoice": "agninet.overrides.purchase_invoice.PurchaseInvoiceCustom"
+}
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -199,3 +199,8 @@ app_license = "MIT"
 # auth_hooks = [
 #	"agninet.auth.validate"
 # ]
+test_string = "abhiraaj"
+test_list = ["value"]
+test_dict = {
+    "key": "value"
+}

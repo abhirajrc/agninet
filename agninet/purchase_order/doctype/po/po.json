@@ -1,0 +1,368 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:po_number",
+ "creation": "2023-05-04 19:58:40.324915",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "po_number",
+  "quote_no",
+  "cbr_1",
+  "purchase_order_date",
+  "sbr_1",
+  "component",
+  "po_value",
+  "sbr_2",
+  "freight2",
+  "cbr_2",
+  "p_and_f1",
+  "discount1",
+  "sbr_3",
+  "po_payable1",
+  "po_payable2",
+  "gst1",
+  "cbr_3",
+  "amount_payable1",
+  "tbr_1",
+  "sbr_4",
+  "cbr_4",
+  "purchased_by",
+  "name_1",
+  "designation",
+  "phone",
+  "cbr_5",
+  "vendor_name",
+  "point_of_contact",
+  "designation_2",
+  "address_b",
+  "phone_b",
+  "address_s",
+  "phone_s",
+  "gst_in",
+  "company_no",
+  "tbr_2",
+  "sbr_5",
+  "payment_terms",
+  "sbr_6",
+  "warranty_in_months",
+  "lt_type",
+  "cbr_6",
+  "penalty",
+  "lead_time",
+  "tbr_3",
+  "other_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Link",
+   "label": "Purchase Order Number",
+   "options": "PO Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "cbr_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "purchase_order_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Purchase Order Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sbr_1",
+   "fieldtype": "Section Break",
+   "label": "Scope of Supply"
+  },
+  {
+   "fieldname": "component",
+   "fieldtype": "Table",
+   "options": "Component Table"
+  },
+  {
+   "fieldname": "po_value",
+   "fieldtype": "Currency",
+   "label": "PO Value",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sbr_2",
+   "fieldtype": "Section Break",
+   "label": "Other Charges (in Percentage)",
+   "options": "Section Heading"
+  },
+  {
+   "fieldname": "sbr_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cbr_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tbr_1",
+   "fieldtype": "Tab Break",
+   "label": "Purchase"
+  },
+  {
+   "fieldname": "sbr_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cbr_4",
+   "fieldtype": "Column Break",
+   "label": "For Agnikul Cosmos Private Limited"
+  },
+  {
+   "default": "Agnikul Cosmos Pvt. Ltd.",
+   "fieldname": "purchased_by",
+   "fieldtype": "Data",
+   "label": "Purchased by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_1",
+   "fieldtype": "Select",
+   "label": "Name",
+   "options": "Syed Peer Mohamed Shah Khadri\nSrinath Ravichandran"
+  },
+  {
+   "default": "Director",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "default": "7247246334",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cbr_5",
+   "fieldtype": "Column Break",
+   "label": "For Vendor"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Vendor",
+   "options": "Vendor Details"
+  },
+  {
+   "fetch_from": "vendor_name.point_of_contact",
+   "fieldname": "point_of_contact",
+   "fieldtype": "Data",
+   "label": "Point of Contact",
+   "read_only": 1
+  },
+  {
+   "fieldname": "designation_2",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vendor_name.address_b",
+   "fieldname": "address_b",
+   "fieldtype": "Text",
+   "label": "Billing Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vendor_name.phone_b",
+   "fieldname": "phone_b",
+   "fieldtype": "Data",
+   "label": "Phone (Billing)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vendor_name.address_s",
+   "fieldname": "address_s",
+   "fieldtype": "Text",
+   "label": "Shipping Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vendor_name.phone_s",
+   "fieldname": "phone_s",
+   "fieldtype": "Data",
+   "label": "Phone (Shipping)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vendor_name.gst_in",
+   "fieldname": "gst_in",
+   "fieldtype": "Data",
+   "label": "GST IN",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vendor_name.company_no",
+   "fieldname": "company_no",
+   "fieldtype": "Data",
+   "label": "Company No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tbr_2",
+   "fieldtype": "Tab Break",
+   "label": "Terms & Conditions"
+  },
+  {
+   "fieldname": "sbr_5",
+   "fieldtype": "Section Break",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Table",
+   "label": "Payment Terms",
+   "options": "Payment Terms Table"
+  },
+  {
+   "fieldname": "sbr_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "warranty_in_months",
+   "fieldtype": "Int",
+   "label": "Warranty (in Months)"
+  },
+  {
+   "fieldname": "lt_type",
+   "fieldtype": "Select",
+   "label": "Lead time Type",
+   "options": "Day(s)\nMonth(s)"
+  },
+  {
+   "fieldname": "cbr_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "10",
+   "description": "The vendor is liable to transfer the amount in 60 day(s) if already paid",
+   "fieldname": "penalty",
+   "fieldtype": "Percent",
+   "label": "Penalty Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lead_time",
+   "fieldtype": "Int",
+   "label": "Lead Time"
+  },
+  {
+   "fieldname": "tbr_3",
+   "fieldtype": "Tab Break",
+   "label": "File Upload"
+  },
+  {
+   "fieldname": "other_documents",
+   "fieldtype": "Attach",
+   "label": "Other Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "p_and_f1",
+   "fieldtype": "Percent",
+   "label": "P and F",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "discount1",
+   "fieldtype": "Percent",
+   "label": "Discount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "po_payable1",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "PO Payable",
+   "options": "value",
+   "precision": "2",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "0%",
+   "fieldname": "gst1",
+   "fieldtype": "Select",
+   "label": "GST",
+   "options": "0%\n5%\n12%\n18%\n28%"
+  },
+  {
+   "default": "0",
+   "fieldname": "amount_payable1",
+   "fieldtype": "Currency",
+   "label": "Amount Payable",
+   "options": "value",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "po_payable2",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "PO Payable 2"
+  },
+  {
+   "fieldname": "quote_no",
+   "fieldtype": "Data",
+   "label": "Ref. Quotation No."
+  },
+  {
+   "default": "0",
+   "fieldname": "freight2",
+   "fieldtype": "Percent",
+   "label": "Freight",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cbr_2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-05 12:46:20.376728",
+ "modified_by": "Administrator",
+ "module": "Purchase Order",
+ "name": "PO",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

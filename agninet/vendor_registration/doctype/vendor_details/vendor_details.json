@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:vendor_name",
+ "creation": "2023-05-04 23:04:33.463327",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor_name",
+  "international",
+  "cbr_1",
+  "point_of_contact",
+  "sbr_1",
+  "address_b",
+  "pin_b",
+  "phone_b",
+  "cbr_2",
+  "address_s",
+  "pin_s",
+  "phone_s",
+  "sbr_2",
+  "gst_in",
+  "company_no"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vendor Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "international",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "International",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cbr_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "point_of_contact",
+   "fieldtype": "Data",
+   "label": "Point of Contact"
+  },
+  {
+   "fieldname": "sbr_1",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_b",
+   "fieldtype": "Small Text",
+   "label": "Billing Address"
+  },
+  {
+   "fieldname": "pin_b",
+   "fieldtype": "Int",
+   "label": "PIN (Billing)"
+  },
+  {
+   "fieldname": "phone_b",
+   "fieldtype": "Data",
+   "label": "Phone (Billing)"
+  },
+  {
+   "fieldname": "cbr_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_s",
+   "fieldtype": "Small Text",
+   "label": "Shipping Address"
+  },
+  {
+   "fieldname": "pin_s",
+   "fieldtype": "Int",
+   "label": "PIN (Shipping)"
+  },
+  {
+   "fieldname": "phone_s",
+   "fieldtype": "Data",
+   "label": "Phone (Shipping)"
+  },
+  {
+   "fieldname": "sbr_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gst_in",
+   "fieldtype": "Data",
+   "label": "GSTIN",
+   "read_only_depends_on": "international"
+  },
+  {
+   "depends_on": "international",
+   "fieldname": "company_no",
+   "fieldtype": "Data",
+   "label": "Company No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-10 13:56:22.922570",
+ "modified_by": "Administrator",
+ "module": "Vendor Registration",
+ "name": "Vendor Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Master Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

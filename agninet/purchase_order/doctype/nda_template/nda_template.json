@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:organisation_name",
+ "creation": "2023-05-26 13:57:56.205250",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organisation_name",
+  "address",
+  "cbr1",
+  "registration_no",
+  "nda_date",
+  "sbr1",
+  "description",
+  "sbr2",
+  "rep_name",
+  "rep_design"
+ ],
+ "fields": [
+  {
+   "fieldname": "organisation_name",
+   "fieldtype": "Link",
+   "label": "Organisation Name",
+   "options": "Vendor Details",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No."
+  },
+  {
+   "fetch_from": "organisation_name.address_b",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "sbr1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "rep_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "rep_design",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "sbr2",
+   "fieldtype": "Section Break",
+   "label": "Represented By"
+  },
+  {
+   "fieldname": "cbr1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nda_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-29 11:45:05.245347",
+ "modified_by": "Administrator",
+ "module": "Purchase Order",
+ "name": "NDA Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

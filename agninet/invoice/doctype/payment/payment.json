@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{po_number}_{##}",
+ "creation": "2023-05-08 17:23:56.736890",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "po_link",
+  "cbr_1",
+  "po_number",
+  "delivery_date_data",
+  "sbr_1",
+  "vendor_name",
+  "cbr_2",
+  "gst_in",
+  "company_no",
+  "sbr_2",
+  "payment_terms",
+  "payment_amount",
+  "sbr_3",
+  "total_amount",
+  "cbr3",
+  "outstanding"
+ ],
+ "fields": [
+  {
+   "fieldname": "cbr_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sbr_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cbr_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "po_link.gst_in",
+   "fieldname": "gst_in",
+   "fieldtype": "Data",
+   "label": "GST IN",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "po_link.company_no",
+   "fieldname": "company_no",
+   "fieldtype": "Data",
+   "label": "Company No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sbr_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_amount",
+   "fieldtype": "Table",
+   "label": "Payment Amount",
+   "options": "Payment Table"
+  },
+  {
+   "fieldname": "sbr_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cbr3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outstanding",
+   "fieldtype": "Currency",
+   "label": "Outstanding",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "po_link.po_number",
+   "fieldname": "po_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PO Number",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "po_link",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "PO"
+  },
+  {
+   "fetch_from": "po_link.vendor_name",
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Vendor Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_date_data",
+   "fieldtype": "Date",
+   "label": "Delivery Date 1",
+   "print_hide": 1,
+   "report_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-13 12:17:02.836347",
+ "modified_by": "Administrator",
+ "module": "Invoice",
+ "name": "Payment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-04 19:12:05.334798",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_item",
+  "p_name",
+  "description",
+  "type",
+  "cur",
+  "rate",
+  "quantity",
+  "unit",
+  "value"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_item",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Component"
+  },
+  {
+   "fetch_from": "name_item.name1",
+   "fieldname": "p_name",
+   "fieldtype": "Data",
+   "label": "Print Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Product\nService"
+  },
+  {
+   "fieldname": "cur",
+   "fieldtype": "Link",
+   "label": "Cur",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "options": "cur",
+   "precision": "2"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "label": "Unit",
+   "options": "Nos\nSet\nLot\nMetre(s)\nKg(s)\nft.\nPair"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Currency",
+   "label": "Value",
+   "options": "cur",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-04 19:44:53.516529",
+ "modified_by": "Administrator",
+ "module": "Purchase Order",
+ "name": "Component Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
